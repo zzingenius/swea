@@ -1,4 +1,4 @@
-## 2072. 홀수만 더하기
+## 2072. 홀수만 더하기(D1)
 [바로가기](https://swexpertacademy.com/main/code/problem/problemDetail.do)
 
 10개의 수를 입력 받아, 그 중에서 홀수만 더한 값을 출력하는 프로그램을 작성하라.
