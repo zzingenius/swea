@@ -1,4 +1,4 @@
-package oddnum_plus;
+package d1.oddnum_plus;
 
 import java.util.Scanner;
 import java.io.FileInputStream;
