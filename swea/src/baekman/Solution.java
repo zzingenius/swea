@@ -11,13 +11,13 @@ public class Solution {
 		int T = sc.nextInt();
 		
 		for(int t = 1; t<=T; t++) {
-			int profit = 0;
+			long profit = 0;
 			int size= sc.nextInt();
 			int max = 0;
 			int[] info = new int[size];
 			
 			for(int i = 0 ; i <size;i++) {
-				info[i] = sc.nextInt(); //배열에 값 집어넣기
+				info[i] = sc.nextInt();
 			}
 			
 			max = info[size-1];
@@ -30,8 +30,6 @@ public class Solution {
 				}
 			}
 			System.out.println("#" +t + " " + profit);
-			
-			
 		}
 	}
 
