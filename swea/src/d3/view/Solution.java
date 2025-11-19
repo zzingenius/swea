@@ -20,38 +20,14 @@ public class Solution {
 				building[i] = sc.nextInt(); //배열에 값 집어넣기
 			}
 			
-			for(int i = 2 ; i < size-3 ; i++) {
-				if(building[i-1]>building[i-2]) {
-					left= minus(building[i], building[i-1]);
-				}else {
-					//building[1-2]가 더 큰 경우
-					left= minus(building[i], building[i-2]);
-				}
+			for(int i = 2 ; i <= size-3 ; i++) {
+				int highest = Math.max(building[i-2], Math.max(building[i-1], Math.max(building[i+1], building[i+2])));
 				
-				if(building[i+1]> building[i+2]) {
-					right = minus(building[i], building[i+1]);
-				}else {
-					right = minus(building[i], building[i+2]);
-				}
-				
-				if(left > right) {
-					view += right;
-				}else {
-					view +=left;
-				}
+				if(building[i] - highest > 0)
+					view += building[i] - highest;
+
 			}
 			System.out.println("#" + test_case + " " + view);
 		}
-		
 	}
-	private static int minus(int a, int b) {
-		int result;
-		if(a > b ) {
-			result = a -b;
-		}else {
-			result = 0;
-		}
-		return result;
-	}
-
 }
