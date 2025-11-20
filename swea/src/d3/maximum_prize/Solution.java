@@ -25,6 +25,7 @@ public class Solution {
 			System.out.println("#" + tc + " " + max);
 		}		
 	}
+	
 	static void dfs(char[] arr, int k) {
 		if(k==0) {
 			//교환 종료 시 현재 값과 max 값 크기 비교 후 값 리턴
